@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header{
+        position: fixed;
+        background-color:  white;
+        width: 100%;
+        margin-bottom: 8px;
+           }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        margin: 0;
+        padding: 0;
+        width: 100px;
+      }
+      header {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        height: 100px;
+        border-top: 4px solid green;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      #nav-text > a,
+      button {
+        margin: 10px;
+        font-style: normal;
+        text-decoration: none;
+        color: rgb(73, 82, 88);
+        font-size: 20px;
+      }
+      .btn1 {
+        padding: 5px 10px;
+      }
+      .btn2 {
+        padding: 5px 10px;
+        background-color: rgb(78, 168, 25);
+        border: none;
+      }
+      .btn1 > a {
+        text-decoration: none;
+        color: rgb(73, 82, 88);
+        font-size: 12px;
+      }
+      .btn2 > a {
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+      }
+      #nav-text > a:hover {
+        text-decoration: underline green;
+      }
+
+      #maindiv {
+        display: flex;
+        justify-content: space-around;
+       
+        height: 400px;
+       
+      }
+      #maindiv > #one {
+        /* border: 1px solid red; */
+        width: 50%;
+        text-align: center;
+        align-items: center;
+        padding: 60px 60px;
+        gap: 40px;
+        font-size: 20px;
+        /* position: fixed; */
+      }
+      #maindiv > #two {
+        /* border: 1px solid red; */
+        width: 50%;
+        padding: 60px 60px;
+      }
+      #one > input {
+        font-size: 20px;
+        padding: 10px;
+      }
+      #one > .btn {
+        background-color: rgb(78, 168, 25);
+        color: white;
+        border: none;
+        /* padding: 10px; */
+      }
+      #blank {
+        text-align: center;
+        margin: auto;
+        background: url("https://desktime.com/static/web/_common/intro-background.png") no-repeat bottom;
+        background-color: 2px solid red;
+      }
+      #blank > a {
+        text-decoration: none;
+        width: 40%;
+      }
+      #blank > a > img {
+        /* text-decoration: none; */
+        width: 12%;
+      }
+      #para {
+        height: 600px;
+        display: flex;
+        width: 100%;
+       
+      }
+      #para > #first {
+        width: 50%;
+       
+        height: auto;
+        padding: 60px;
+        font-size: larger;
+        gap: 20px;
+      }
+      #para>#second{
+        width:40% ;
+      
+      }
+      #para>#first>div{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+       
+        margin: 20px;
+        gap: 50px;
+      }
+      #para>#second>img{
+       width: 60%;
+       display: flex;
+       margin: auto;
+       padding-top: 20px;
+      }
+      #centre{
+        height: auto;
+       
+        background: url("https://desktime.com/static/web/_common/intro-background.png") no-repeat bottom;
+
+      }
+      #centre>#cen-child{
+        height: 100px;
+        background-color:rgb(236,237,237);
+        
+        text-align: center;
+        align-items: center;
+        padding: 120px;
+        font-size: larger;
+      }
+      #centre>#child{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+       
+      }
+      #child>#child-one{
+       
+        
+        padding:120px;
+        row-gap: 30px;
+
+      }
+      #child>#child-one>div{
+        font-size: larger;  
+        display: grid;   
+        row-gap: 20px;
+      }
+      #child>#child-second>.boxes>img{
+        display: flex;
+       justify-content: center;
+       width: 80%;
+       padding-top: 200px;
+       margin: auto;
+       height: 500px;
+      }
+
+      #centre>#div-bottom{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-content: center;
+        margin: auto;
+        height: 200px;
+      
+      
+        font-size: larger;
+      }
+      #centre>#div-bottom>div>a{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        text-decoration: none;
+        padding:10px;
+        color: rgb(73, 82, 88);
+      }
+      #centre>#div-bottom>div>a:hover{
+       background-color: darkgray;
+      }
+
+
+      main>.button-input{
+        text-align: center;
+        display: flex;
+        margin: 10px auto;
+        padding:15px;
+        font-size: larger;
+        
+        color: rgb(73, 82, 88)
+      }
+      main>.pl{
+        text-align: center;
+        color: rgb(73, 82, 88);
+        padding-bottom:70px;
+        font-size: larger;
+    
+      }
+     #container{
+      height: auto;
+      background-color: rgb(245,245,246);
+      padding-bottom: 100px;
+      border-bottom:rgb(245,245,246) ;
+     }
+      #container>#cp{
+        height:auto;
+        text-align: center;
+        padding: 100px 300px;
+        font-size: larger;
+      }
+      #container>#slide{
+       
+        height: 80%;
+       
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: auto;
+        background-color: rgb(245,245,246);
+       
+      }
+      #slide>div>img{
+        border-radius: 8ch;
+      }
+      #slide>div{
+      padding:50px;
+      width: 20%;
+       font-size: large;
+       background-color: rgb(245,245,246);
+       height: 420px;
+       /* height: auto; */
+       box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+      }
+     #contain{
+      display: flex;
+      height: auto;
+      width: auto;
+      justify-content: center;
+     }
+     #contain>div{
+      width: 50%;
+      
+     }
+     #contain>div>img{
+      width: 80%;
+      padding-top:100px;    
+     }
+     #contain>.two{
+      font-size: larger;
+      padding: 80px;
+    
+     }
+     #contain>.two>div{
+      gap: 30px 10px;
+     }
+     #app{
+      height: 400px;
+      width: 100%;
+      background-color:rgb(245,245,246) ;
+      display: flex;
+     }
+     #app>div{
+        width: 50%;
+       
+     }
+     #app>#div1>img{
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      padding:60px;
+     }
+    #app>#div2{
+        font-size: larger;
+        padding: 100px;
+
+    }
+    .read{
+      padding: 10px;
+    }
+
+    #main1>.child1{
+      height: 100px;
+      font-size: large;
+      width: 60%;
+      padding: 30px 120px;
+    
+      margin: auto;
+      text-align: center;
+    }
+    
+#main-child{
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  
+  padding-bottom: 60px;
+  border-bottom:2px solid rgb(192, 171, 212);
+
+
+}
+  #main-child>div{ 
+   /* width: 30%;  */
+   padding-top: 30px;
+  /* row-gap: 20px; */
+ } 
+ #main-child>div>img{ 
+   width: 80%; 
+ 
+} 
+.btn{
+  padding: 10px;
+
+}
+#par{
+  width: 60%;
+  /* text-align: center; */
+  font-size: larger;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+#par>p{
+  border: 1px solid rgb(173, 158, 188);
+  padding: 5px;
+}
+#green{
+  height: auto;
+  background-color: rgb(78,168,25);
+  text-align: center;
+  padding: 100px 120px;
+  color: white;
+  font-size: larger;
+
+}
+#green>.btn-green{
+  background-color: rgb(78,168,25);
+  color: white;
+  border: 1px solid white;
+}
+#green>input{
+  font-size: medium;
+  color: rgb(73, 82, 88);
+  padding: 8px;
+  
+ 
+
+}
+#table{
+  display: flex;
+  font-size:larger ;
+  justify-content: space-evenly;
+}
+#table>div>h3,a{
+  text-decoration:none;
+  color: rgb(73, 82, 88);
+}
+#table>div{
+  padding-top: 40px;
+}
+#lbottom{
+  display: flex;
+  height: auto;
+  background-color: rgb(235,236,236);
+}
+#lbottom>div{
+ 
+  width: 50%;
+ 
+  height: auto;
+
+} 
+#lbottom>#first{ 
+  text-align: center; 
+ 
+  margin: auto;
+ }
+ #lbottom>#first>#images>img{ 
+  width: 40px; 
+ margin: 20px;
+ }
+
+ #lbottom>.second{
+  
+  margin: auto;
+  
+  text-align: center;
+ 
+ }
+ .second>.input1{
+  font-size: larger;
+  padding: 8px;
+  border: 0.5px solid red;
+ }
+ .second>.input2{
+  font-size: medium;
+  color: white;
+  background-color: green;
+  padding: 8px;
+  border: 0.5px solid black;
+ }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <img src="Untitled design.jpg" />
+        </div>
+        <div id="nav-text">
+          <a href="">Demo</a>
+          <a href="">Features</a>
+          <a href="">Pricing</a>
+          <a href="">About us</a><a href="">FAQ</a>
+          <a href="">Blog</a>
+          <button class="btn1"><a href="">LOGIN</a></button>
+          <button class="btn2"><a href="">SIGN UP</a></button>
+
+          <select>
+            <option value="">English</option>
+            <option value="">Hindi</option>
+            <option value="">French</option>
+          </select>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="maindiv">
+        <div id="one">
+          <h1>The ultimate all-in-one time tracker for your business</h1>
+          <br />
+          <p>
+            A time tracker with additional workforce management features that
+            will help you develop a high-performing team that smashes all the
+            goals every time.
+          </p>
+          <br />
+          <input type="text" placeholder="Your work email" />
+
+          <input class="btn" type="submit" value="START YOUR FREE TRIAL" />
+          <br />
+          <p>Try free for 14 days. No credit card required.</p>
+
+          <p>
+            By signing up, you agree to our <u>terms</u> and
+            <u>privacy policy</u>
+          </p>
+        </div>
+        <div id="two">
+          <iframe
+            width="554"
+            height="312"
+            src="https://www.youtube.com/embed/sgmDvqlSMF4?list=TLGGEClHjokj1vQwODExMjAyMg"
+            title="DeskTime: Time and Employee Management Software"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div id="blank">
+        <a href="">
+          <img
+            src="https://desktime.com/static/web/clients/customer-sixt-logo-white.svg"
+          />
+        </a>
+        <a href="">
+          <img
+            src="https://desktime.com/static/web/clients/customer-mapon-logo-white.svg"
+            alt=""
+          />
+        </a>
+        <a href="">
+          <img
+            src="https://desktime.com/static/web/clients/customer-montway-logo-white.svg"
+            alt=""
+          />
+        </a>
+        <a href="">
+          <img
+            src="https://desktime.com/static/web/clients/customer-onthemap-logo-white.svg"
+            alt=""
+          />
+        </a>
+        <a href="">
+          <img
+            src="https://desktime.com/static/web/clients/customer-printful-logo-white.svg"
+            alt=""
+          />
+        </a>
+      </div>
+      <div id="para">
+        <div
+          id="first">
+          <h1>Use time tracking software to boost productivity by 30%</h1>
+          <p>
+            There are numerous ways how DeskTime improves the day-to-day work
+            for managers and employees alike. Here are just a few reasons why
+            time tracking with DeskTime is a great choice for your team.
+          </p>
+          <div>
+            <div>
+              <h3>Skyrocket effectiveness</h3>
+              <p>Know who's doing what and how it's going all the while eliminating distractions.</p>
+
+            </div>
+            <div>
+              <h3>Minimize business losses</h3>
+              <p>Get precise insights into projects to determine profitability and allocate resources.</p>
+            </div>
+            <div>
+              <h3>Automate team management</h3>
+              <p>Organize shifts, absences, and booking-related questions all in one place.</p>
+            </div>
+            <div>
+              <h3>Avoid burnout</h3>
+              <p>Take care of your team and eliminate overworking with break reminders and private time.</p>
+            </div>
+          </div>
+        </div>
+        <div id="second">
+          <img src="https://desktime.com/static/web/new-homepage/boost-productivity/boost-productivity.webp" alt="">
+        </div>
+      </div>
+
+      <div id="centre">
+        <div id="cen-child">
+          <h1>A universal platform for running anything from small businesses to large enterprises</h1>
+          <p>From a powerful time tracker to project management, human resource planning, and running an office. Everything is fully customizable and can be turned on and off for the whole company or specific users.</p>
+        </div>
+        <div id="child">
+          <div id="child-one">
+            <div>
+              <h3>
+                No more manual time trackers</h3>
+                <p>Fully automatic start and end times, no manual entry, and no human error – the automatic time tracker starts up as soon as you open the computer and stops when you close it.</p>
+            </div>
+            <br>
+            <br>
+            <div>
+              <h3>
+                Oversee work progress</h3>
+                <p>With URL and document title tracking it's easy to always be informed about your team's overall progress and habits during work hours.</p>
+            </div>
+            <br>
+            <br>
+            <div>
+              <h3>
+                Optimize your resources</h3>
+                <p>Estimate project costs, assign hourly rates, issue invoices, and control expenses. Project management is easy when you have a birdseye view of all ongoing processes.</p>
+            </div>
+            <br>
+            <br>
+            <div>
+              <h3>
+                Run your office smoothly</h3>
+                <p>DeskTime isn't just a time tracker. You can assign shifts and oversee absences, stay informed about remote workers and run a hybrid office all on one platform.</p>
+            </div>
+
+          </div>
+          <div id="child-second">
+            <div class="boxes">
+            
+                <img src="https://desktime.com/static/web/new-homepage/universal-platform/universal-platform.webp" alt="">
+  
+            </div>
+
+          </div>
+        </div>
+
+        <div id="div-bottom">
+          <div>
+            <a href="">Automatic Time  Tracking
+            </a>
+          </div>
+          <div>
+            <a href="">Offline Time Tracking
+            </a>
+          </div>
+          <div>
+            <a href="">Documents Time Tracking
+            </a>
+          </div>
+          <div>
+            <a href="">Private Time Option
+            </a>
+          </div>
+          <div>
+            <a href="">Invoicing
+            </a>
+          </div>
+          <div>
+            <a href="">Pomodoro Timer
+            </a>
+          </div>
+          <div>
+            <a href="">Team Contact
+            </a>
+          </div>
+          <div>
+            <a href="">Custom Report
+            </a>
+          </div>
+          <div>
+            <a href="">Mobile Tracking
+            </a>
+          </div>
+          <div>
+            <a href="">Screenshots
+            </a>
+          </div>
+          <div>
+            <a href="">URL & Tracking
+            </a>
+          </div>
+          <div>
+            <a href="">Booking
+            </a>
+          </div>
+          <div>
+            <a href="">Web Time Tracker
+            </a>
+          </div>
+          <div>
+            <a href="">Absense Calender
+            </a>
+          </div>
+          <div>
+            <a href="">Project Tracking
+            </a>
+          </div>
+          <div>
+            <a href="">Third-Party-Integrations
+            </a>
+          </div>
+        </div>
+       
+      </div>
+      
+        <input type="button" value="SEE ALL FEATURES" class="button-input">
+      <p class="pl">All the features can be turned on and off to suit eveyone's needs</p>
+     
+    </main>
+
+    <div id="container">
+      <div id="cp">
+        <h1>More than 18 000 companies worldwide trust DeskTime with their business</h1>
+      </div>
+      <div id="slide">
+      <div>
+        
+          <img src="https://desktime.com/static/web/testimonial-images/syed-mazhar-ahmed.jpg" alt="">
+       <h3 inline="block">SYED-MAZHAR-AHMED</h3>
+       <span class="dt-typography-subtitle-regular text-gray-900">CTO</span>
+       <br>
+      
+       <span class="dt-typography-subtitle-regular text-gray-900 font-weight-bolder">Oceanize Inc</span>
+       <br>
+       <br>
+       <h>DeskTime is an awesome tool to not only monitor team's performance but also it helps to boost it. Our company productivity increased by 25% after using DeskTime. It's a must for small to corporate companies.</h3>
+       
+      </div>
+      <div>
+        
+        <img src="https://desktime.com/static/web/testimonial-images/thompson-law.png" alt="">
+     <h3 inline="block">JACK Thompson</h3>
+     <span class="dt-typography-subtitle-regular text-gray-900">CEO</span>
+     <br>
+    
+     <span class="dt-typography-subtitle-regular text-gray-900 font-weight-bolder">Thompson Low</span>
+     <br>
+     <br>
+
+     <h>DeskTime has helped us see where our staff can more efficiently tend to our personal injury cases and the injured clients who need us. Whether working from home or at the office, it has improved overall productivity, efficiency, and most importantly has shown our diligence to be there for our personal injury clients in Dallas-Fort Worth and beyond when it matters most.</h>
+    </div>
+
+    <div>
+        
+      <img src="https://desktime.com/static/web/testimonial-images/cate.jpg" alt="">
+   <h3 inline="block">Customer Relations Manager</h3>
+   <span class="dt-typography-subtitle-regular text-gray-900">ConnexCS</span>
+   <br>
+   <br>
+   <h>DeskTime has helped us see where our staff can more efficiently tend to our personal injury cases and the injured clients who need us. Whether working from home or at the office, it has improved overall productivity, efficiency, and most importantly has shown our diligence to be there for our personal injury clients in Dallas-Fort Worth and beyond when it matters most.</h>
+  </div>
+          </div>
+     
+    </div>
+
+<div id="contain">
+  <div>
+    <img src="https://desktime.com/static/web/new-homepage/seamless-workflow/seamless-workflow.webp" alt="">
+  </div>
+  <div class="two">
+    <h1>A seamless workflow and healthy work-life balance for every employee</h1>
+    <div>
+      <h3>Flexible schedule</h3>
+      <p>Time tracking is proof-of-work and DeskTime's time tracker gives you just that – you can plan your schedule independently, while your manager can simply follow your progress no matter where you are and when you choose to work.</p>
+    </div>
+    <br>
+    <br>
+    <div>
+      <h3>Regular break reminders</h3>
+      <p>Our time tracker uses the Pomodoro timer that will keep a cautious eye on your workload and remind you to take regular breaks so you don't lose focus all the while maintaining healthy habits and mental well-being.</p>
+    </div>
+    <br>
+    <br>
+    <div>
+      <h3>
+        Private time</h3>
+      <p>DeskTime's Private time feature disables the website and time tracker for when you have to take care of non-work-related tasks during office hours. Employees can feel safe knowing their privacy is protected.</p>
+    </div>
+    <br>
+    <br>
+    <div>
+      <h3>No more unbilled hours</h3>
+      <p>Employee time is pure gold when it comes to resource planning. DeskTime's time tracker even lets you add time spent offline like in meetings, brainstorms, or on work calls so no billable hours go unnoticed.</p>
+    </div>
+    <br>
+    <br>
+    <p>All the features can be turned on and off to suit eveyone's needs</p>
+  </div>
+</div>
+
+<div id="app">
+  <div id="div1">
+    
+      <img src="https://desktime.com/static/web/new-homepage/integrations/integrations.webp" alt="">
+   
+  </div>
+  <div id="div2">
+    <h1>Integrations with popular work tools</h1>
+    <br>
+    <p>From calendar apps to help you track offline time, to project management software to make project and task tracking accurate, while effortless. DeskTime can simplify every aspect of your workflow.</p>
+    <br>
+    <input type="button" value="READ MORE" class="read">
+  </div>
+</div>
+
+<div id="main1">
+  <div class="child1">
+    <h1>A single time tracking app for desktops and mobile phones</h1>
+    <p>Whether in the office or on the go – use DeskTime to keep track of your and your team's time.</p>
+  </div>
+<div id ="main-child">
+  <div>
+    <img src="https://desktime.com/static/web/new-homepage/desktop/desktop.webp" alt="">
+    <h2>DeskTime for desktops</h2>
+   <ul>Requires download and installation</ul>
+   <ul>
+    <li>Fully automated time tracker</li>
+    <li>App, URL & Document title tracking</li>
+    <li>Project and task tracking</li>
+    <li>Screenshots</li>
+    <li>Idle and Private time</li>
+   </ul>
+   <input type="submit" value="LEARN MORE" class="btn">
+  </div>
+  <div>
+    <img src="https://desktime.com/static/web/new-homepage/mobile/mobile.webp" alt="">
+    <h2>DeskTime for mobile phones</h2>
+    <ul>Requires download and installation</ul>
+    <ul>
+      <li>Manual time tracker</li>
+      <li>Workday overview</li>
+      <li>Project and task tracking</li>
+    </ul>
+    <input type="submit" value="LEARN MORE" class="btn">
+  </div>
+  <div>
+    <img src="https://desktime.com/static/web/new-homepage/webtimer/webtimer.webp" alt="">
+     <h2>Manual time tracking</h2>
+     <p>Supported on all popular browsers</p>
+     <ul>No software installation necessary</ul>
+     <ul>
+      <li>Manual time tracker</li>
+     <li>Workday overview</li>
+     <li>Project and task tracking</li>
+     </ul>
+     
+     <input type="submit" value="LEARN MORE" class="btn">
+     
+  </div> 
+</div>
+  
+</div>
+
+<div id="par">
+  <h1>Things worth knowing about using a time tracker</h1>
+  <br>
+   <h4>How does using a time tracker improve productivity?</h4>
+   <br>
+   <p>This self-analysis will motivate both you and your employees to do better and avoid any unnecessary and unproductive actions like those well-known “fast and easy” 5-minute jobs many of us are often asked to do. Employees who track time can note how much these extra jobs actually take up their day and be able to make better decisions on whether it’s worth interrupting their workflow.</p>
+   <br>
+   <h4>Can implementing DeskTime prevent burnout?</h4>
+   <br>
+   <p>Yes! Using a time tracker can help highlight overachievers and spot team members who are struggling or might need some extra help. This is a great way to catch and prevent burnout, as well as rethink resource distribution.</p>
+
+<br>
+<h4>Is my team's privacy safe when using a time tracker?</h4>
+<br>
+<p>First thing’s first – DeskTime is not an employee monitoring or spy tool, but it’s no secret that some might use this kind of software in ways that aren’t employee-friendly. Managers have the right to know how their employees get the job done, but it's imperative to also value your team's time and privacy. That's why DeskTime even has a Private time feature that disables the time tracker for when you have to take care of non-work-related tasks during office hours.</p>
+<br>
+<h4>How to communicate using a time tracker with your team?</h4>
+<br>
+<p>You have to remember that time tracking is a two-way street of communication and lead by example. Yes, it gives managers an overview of what their employees are doing during the workday, but it’s also a tool to help employees show their progress and ask for help if needed. Be transparent and honest about implementing a time tracker and take the time to show its benefits. For example, DeskTime lets you set break reminders, encourage private time, and eliminate overworking so your team members feel rested, valued, and safe.</p>
+</div>
+<div id="green">
+  <h1>Want to get the most out of your time?
+    Try DeskTime for free!</h1>
+    <br>
+    <input type="text" value="Your work mail" placeholder="email">
+    <input type="submit" value="START FREE TRIAL" class="btn-green">
+    <br>
+    <br>
+    <p>Try free for 14 days. No credit card required.</p>
+    <br>
+    <p>By signing up, you agree to our <u>terms</u> and <u>privacy policy.</u></p>
+</div>
+<div id="table">
+
+  <div class="div-one">
+    <h3><a href="">Company</a></h3>
+<a href="">Home</a><br>
+<a href="">Terms</a><br>
+<a href="">Privacy</a><br>
+<a href="">Cookies</a><br>
+<a href="">Affiliate terms</a><br>
+<a href="">Download app</a><br>
+<a href="">Pricing</a><br>
+<a href="">Affiliate</a><br>
+<a href="">Press</a><br>
+<a href="">DeskTime in your language</a><br>
+  </div>
+  <div class="div-two">
+    <h3><a href="">Learn more</a></h3><br>
+<a href="">All resource</a><br>
+<a href="">Employee monitoring guide</a><br>
+<a href="">Online employee time clock</a><br>
+<a href="">DeskTime for business</a><br>
+<a href="">DeskTime for freelancers</a><br>
+<a href=""> FAQ</a><br>
+<a href="">Casen studies</a><br>
+<a href="">Webinars</a><br>
+<a href="">Blog</a><br>
+<a href=""></a><br>
+  </div>
+    
+  <div class="div-three">
+    <h3><a href="">Integrations</a></h3><br>
+    <a href="">All integrations</a><br>
+    <a href="">Trello</a><br>
+    <a href="">Basecamp</a><br>
+    <a href="">Jira</a><br>
+    <a href="">Asana</a><br>
+    <a href="">Outlook</a><br>
+    <a href="">Google</a><br>
+  </div>
+
+  <div class="four">
+    <h3><a href="">Features</a></h3><br>
+    <a href="">All features</a><br>
+    <a href="">Automatic time tracking</a><br>
+    <a href=""> URL & App Tracking</a><br>
+    <a href="">Screenshots</a><br>
+    <a href="">Project time tracking</a><br>
+    <a href=""> Shift schedule</a><br>
+    <a href=""> Offiline time tracking</a><br>
+    <a href=""> Absebse</a><br>
+    <a href="">Mobile app</a><br>
+    <a href="">Features request</a><br>
+  </div>
+
+  <div class="five">
+    <h3><a href="">Help centre</a></h3><br>
+    <a href="">Contact</a><br>
+    <a href="">Schedule</a><br>
+    <a href="">Send us an e-mail</a><br>
+    <a href="">Request in-person training</a><br>
+    <a href="">Open chat</a><br>
+    <a href=""><h3>Phone support</h3></a><br>
+    <a href="">+1(315)6365354</a><br>
+    <a href="">MON-FRI 9:00-22:00</a><br>
+  </div>
+</div>
+
+<div id="lbottom">
+  <div id="first">
+    <div>
+      <img  src="Untitled design.jpg" alt="">
+    </div>
+    <div id="images">
+      <img  src="https://eep.io/images/yzco4xsimv0y/5daYAeMRSgIUUiSquGwsgI/1904e3f818575ec9625fa15dab193243/icon-facebook.svg?w=320&fm=webp&q=80" alt="">
+        <img src="https://eep.io/images/yzco4xsimv0y/3VjJhbqftKuok6gqYuUQKy/328d56c5d13ad50b9679b11e716bb218/icon-twitter.svg?w=320&fm=webp&q=80" alt="">
+        <img src="https://eep.io/images/yzco4xsimv0y/RlNw7Xkw8uKYAUoYU4aQw/ff3eada8736da9e63fbd9f929c6a677c/icon-instagram.svg?w=320&fm=webp&q=80" alt="">
+        <img src="https://eep.io/images/yzco4xsimv0y/n5saFR4miW4U4ygUIQo0A/8f9c60cb133b80fda2fe9bdb825b4a5f/icon-linkedin.svg?w=320&fm=webp&q=80" alt="">
+        <img src="https://eep.io/images/yzco4xsimv0y/2z1ra9BrgQewIqMQckMasg/58e3e8ec04acd60f0642f89dfbd71218/icon-youtube.svg?w=320&fm=webp&q=80" alt="">
+        <img src="https://eep.io/images/yzco4xsimv0y/7nawBEArBKpxRukK66OZtN/af9879112b20982e13748d47b24c8681/pinterest-logo.svg?w=320&fm=webp&q=80" alt="">
+
+    </div>
+  </div>
+  <div class="second">
+  
+    <img src="https://eep.io/images/yzco4xsimv0y/1u3hha7FE0Q402e2qsMu6a/5e403548149c1618b64034284f692ff1/icon-ios.svg?w=320&fm=webp&q=80" alt="">
+   <img src="https://eep.io/images/yzco4xsimv0y/64EpnI4RsQI66c2y2O60G2/4c34d7bc4dd7a4362c7e19a06c109e21/icon-android.svg?w=320&fm=webp&q=80" alt="">
+   <br>
+ 
+  <p>Subscribe to our newsletter</p>
+  <input type="text" value="Type in your email" class="input1">
+  <input type="submit" value="SUBSCRIBE" bg="green" class="input2">
+  </div>
+</div>
+  </body>
+</html>

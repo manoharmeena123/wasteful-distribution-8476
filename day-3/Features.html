@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         header {
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        margin: 0;
+        padding: 0;
+        width: 100px;
+      }
+      header {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        height: 100px;
+        border-top: 4px solid green;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      #nav-text > a,
+      button {
+        margin: 10px;
+        font-style: normal;
+        text-decoration: none;
+        color: rgb(73, 82, 88);
+        font-size: 20px;
+      }
+      .btn1 {
+        padding: 5px 10px;
+      }
+      .btn2 {
+        padding: 5px 10px;
+        background-color: rgb(78, 168, 25);
+        border: none;
+      }
+      .btn1 > a {
+        text-decoration: none;
+        color: rgb(73, 82, 88);
+        font-size: 12px;
+      }
+      .btn2 > a {
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+      }
+      #nav-text > a:hover {
+        text-decoration: underline green;
+        color: green;
+      }
+      #maindiv{
+        height: 600px;
+      
+        padding-top: 110px;
+       
+      }
+      #maindiv>#one{
+        text-align: center;
+        padding:60px 150px;
+        background: url("https://desktime.com/static/web/_common/intro-background.png")
+          no-repeat bottom;
+      }
+      #one>input{
+        padding: 15px;
+      }
+      #one>.btn{
+        background-color: green;
+        color:white;
+        border: none;
+        padding: 15px;
+      }
+      #maindiv>#two{
+        display: flex;
+        margin: auto;
+        justify-content: space-evenly;
+       padding-top: 30px;
+       text-align: center;
+      }
+
+      main>#div-bottom{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        justify-content: center;
+        margin: auto;
+        height: 400px;
+        padding-top: 50px;
+        font-size: larger;
+      }
+      #div-bottom>div{
+        margin-right: 60px;      }
+      main>#div-bottom>div>a{
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        text-decoration: none;
+        padding:10px;
+        color: rgb(73, 82, 88);
+      }
+      main>#div-bottom>div>a:hover{
+       background-color: darkgray;
+      }
+      #laptop{
+        width: 70%;
+        padding: 80px;
+        height: 200px;
+        display: flex;
+        font-size: larger;
+        margin: auto;
+        justify-content: space-around;
+        /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+      }
+      #laptop>div{
+        width: 50%;
+       text-align: center;
+        padding: 20px;
+      }
+      #laptop>div>img{
+        width: 50%;
+      }
+      .two>.btn{
+        padding: 10px;
+        background-color: green;
+        color: white;
+        border: none;
+      }
+      #blue{
+        background-color: blueviolet;
+       align-items: center;
+      }
+      #blue>h1{
+        text-align: center;
+        color: white;
+        padding: 5px;
+      }
+      #pdct{
+        width: 70%;
+        padding: 80px;
+        height: 200px;
+        display: flex;
+        font-size: larger;
+        margin: auto;
+        justify-content: space-around;
+        /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+      }
+      #pdct>div{
+        width: 50%;
+       /* text-align: center; */
+        padding: 20px;
+      }
+      #pdct>div>img{
+        width: 80%;
+      }
+      .two>.btn{
+        padding: 10px;
+        background-color: green;
+        color: white;
+        border: none;
+      }
+
+      #auto{
+        width: 70%;
+        padding: 80px;
+        height: 200px;
+        display: flex;
+        /* font-size: larger; */
+        gap: 60px;
+        margin: auto;
+       margin-top: 60px;
+        justify-content: space-around;
+        /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+      }
+      #auto>div{
+        width: 50%;
+       /* text-align: center; */
+        padding: 20px;
+      }
+      #auto>div>img{
+        width: 80%;
+      }
+      .two>.btn{
+        padding: 10px;
+        background-color: green;
+        color: white;
+        border: none;
+      }
+
+      #twtt{
+        width: 70%;
+        padding: 80px;
+        height: 200px;
+        display: flex;
+        font-size: larger;
+        gap: 60px;
+        margin: auto;
+       margin-top: 60px;
+        justify-content: space-around;
+        /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+      }
+      #twtt>div{
+        width: 50%;
+       /* text-align: center; */
+        padding: 20px;
+      }
+      #twtt>div>img{
+        width: 80%;
+      }
+      .two>.btn{
+        padding: 10px;
+        background-color: green;
+        color: white;
+        border: none;
+      }
+
+      #book{
+        width: 70%;
+        padding: 80px;
+        height: 200px;
+        display: flex;
+        font-size: larger;
+        gap: 60px;
+        margin: auto;
+       margin-top: 60px;
+        justify-content: space-around;
+        /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+      }
+      #book>div{
+        width: 50%;
+       /* text-align: center; */
+        padding: 20px;
+      }
+      #book>div>img{
+        width: 100%;
+      }
+      .two>.btn{
+        padding: 10px;
+        background-color: green;
+        color: white;
+        border: none;
+      }
+      #screen{
+        width: 70%;
+        padding: 80px;
+        height: 200px;
+        display: flex;
+        font-size: larger;
+        gap: 60px;
+        margin: auto;
+       margin-top: 60px;
+        justify-content: space-around;
+        /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+      }
+      #screen>div{
+        width: 50%;
+       /* text-align: center; */
+        padding: 20px;
+      }
+      #screen>div>img{
+        width: 100%;
+      }
+      .two>.btn{
+        padding: 10px;
+        background-color: green;
+        color: white;
+        border: none;
+      }
+
+
+      #ott{
+        width: 70%;
+        padding: 80px;
+        height: 200px;
+        display: flex;
+        font-size: larger;
+        gap: 60px;
+        margin: auto;
+       margin-top: 60px;
+        justify-content: space-around;
+        /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+      }
+      #ott>div{
+        width: 50%;
+       /* text-align: center; */
+        padding: 20px;
+      }
+      #ott>div>img{
+        width: 60%;
+      }
+      .two>.btn{
+        padding: 10px;
+        background-color: green;
+        color: white;
+        border: none;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <div>
+            <a href="./index.html"
+              ><img
+                src="C:\Users\BIIT\OneDrive\Desktop\wasteful-distribution-8476\day-3\Untitled design.jpg"
+            /></a>
+          </div>
+          <div id="nav-text">
+            <a href="./Demo.html">Demo</a>
+            <a href="./Features.html">Features</a>
+            <a href="">Pricing</a>
+            <a href="">About us</a><a href="">FAQ</a>
+            <a href="">Blog</a>
+            <button class="btn1"><a href="./login.html">LOGIN</a></button>
+            <button class="btn2"><a href="./Signup.html">SIGN UP</a></button>
+  
+            <select>
+              <option value="">English</option>
+              <option value="">Hindi</option>
+              <option value="">French</option>
+            </select>
+          </div>
+        </nav>
+      </header>
+    <main>
+        <div id="maindiv">
+            <div id="one">
+              <h1>DeskTime features to help you excel</h1>
+              <br />
+              <p>
+                Whether you’re a manager who oversees a group of employees, a company owner, or a freelancer <p>that uses a personal computer, private time is a feature for building trust and maintaining</p> professionalism between all parties.
+              </p>
+              <br />
+              <input type="search" placeholder="Your work email" />
+    
+              <input class="btn" type="submit" value="START YOUR FREE TRIAL" />
+              <br />
+              <p>Try free for 14 days. No credit card required.</p>
+    
+              <p>
+                By signing up, you agree to our <u>terms</u> and
+                <u>privacy policy</u>
+              </p>
+            </div>
+
+            <div id="two">
+                <div>
+                    <img src="https://desktime.com/static/web/features/boost-productivity.svg" alt="">
+                    <h3>Boost productivity by 30%</h3>
+                    <p>Identify and eliminate inefficient habits.</p>
+
+                </div>
+                <div>
+                    <img src="https://desktime.com/static/web/features/stay-organized.svg" alt="">
+                    <h3>Stay organized and in control</h3>
+                    <p>Manage your team and track projects in one place.</p>
+                </div>
+                <div>
+                    <img src="https://desktime.com/static/web/features/automatic-reports.svg" alt="">
+                    <h3>Save time and manual work</h3>
+                    <p>No manual timesheets that take time to </p>
+                    <p>fill out and are never 100% reliable.</p>
+                </div>
+            </div>
+            </div>
+
+            <div id="div-bottom">
+                <div>
+                  <a href="">Automatic Time  Tracking
+                  </a>
+                </div>
+                <div>
+                  <a href="">Offline Time Tracking
+                  </a>
+                </div>
+                <div>
+                  <a href="">Documents Time Tracking
+                  </a>
+                </div>
+                <div>
+                  <a href="">Private Time Option
+                  </a>
+                </div>
+                <div>
+                  <a href="">Invoicing
+                  </a>
+                </div>
+                <div>
+                  <a href="">Pomodoro Timer
+                  </a>
+                </div>
+                <div>
+                  <a href="">Team Contact
+                  </a>
+                </div>
+                <div>
+                  <a href="">Custom Report
+                  </a>
+                </div>
+                <div>
+                  <a href="">Mobile Tracking
+                  </a>
+                </div>
+                <div>
+                  <a href="">Screenshots
+                  </a>
+                </div>
+                <div>
+                  <a href="">URL & Tracking
+                  </a>
+                </div>
+                <div>
+                  <a href="">Booking
+                  </a>
+                </div>
+                <div>
+                  <a href="">Web Time Tracker
+                  </a>
+                </div>
+                <div>
+                  <a href="">Absense Calender
+                  </a>
+                </div>
+                <div>
+                  <a href="">Project Tracking
+                  </a>
+                </div>
+                <div>
+                  <a href="">Third-Party-Integrations
+                  </a>
+                </div>
+              </div>
+             
+    </main>
+    <div id="laptop">
+        
+        
+        <div class="two">
+            <h1>Automatic time tracking</h1>
+            <br>
+
+            <p>DeskTime time tracker starts and stops working when you do, from the minute you turn on the computer, to the minute you turn it off. No manual data entries - DeskTime tracks and calculates productivity automatically for you. So that you can rely 100% on the data you see.</p>
+            <input class="btn" type="submit" value="MORE ABOUT TIME TRACKING" />
+      </div>
+      <div>
+        <img src="https://desktime.com/static/web/features/automatic-time-tracking.png" alt="">
+    </div>
+  </div>
+  <div id="blue">
+    <h1>Get an in-depth view of your team’s workday</h1>
+  </div>
+
+  <div id="pdct">
+        
+    <div>
+        <img src="https://desktime.com/static/web/features/urls.png" alt="">
+    </div>
+    <div class="two">
+        <h1>URL and app tracking</h1>
+        <br>
+
+        <p>See what websites, programs, and applications your employees use, and categorize them into productive or unproductive for completing their work tasks. Through such internet usage monitoring, see how your employees spend their days, as well as each person's average productivity.</p>
+        <br>
+        <input class="btn" type="submit" value="READ MORE" />
+  </div>
+  
+</div>
+
+<div id="auto">
+        
+    
+    <div class="two">
+        <h1>Document title tracking</h1>
+        <br>
+
+        <p>Know which tasks your team is working on when they use specific programs, like Excel, Word, Photoshop, etc. Instead of just displaying the total time spent on the program, DeskTime will also record titles of documents or files and time spent on each of them.</p>
+        <br>
+        <input class="btn" type="submit" value="MORE ABOUT TITLE TRACKING" />
+  </div>
+  <div>
+    <img src="https://desktime.com/static/web/features/documents.png" alt="">
+</div>
+  
+</div>
+
+<div id="twtt">
+        
+    <div>
+        <img src="https://desktime.com/static/web/features/integrated-web-timer.png" alt="">
+    </div>
+    <div class="two">
+        <h1>Integrated web time tracker</h1>
+    
+
+        <p>Track time, projects, and tasks, and use the break timer directly from your browser without the need to download and install any software.</p>
+        <br>
+        <input class="btn" type="submit" value="MORE ABOUT WEB TIME TRACKER" />
+  </div>
+  
+</div>
+
+<div id="book">
+        
+    
+    <div class="two">
+        <h1>Booking</h1>
+        <p>Using Booking is the best way to manage shared workspaces. This feature can be used for desk booking as well as for parking spaces, office gadgets, vehicles, different amenities, or as a meeting room booking system. All bookings are updated in real-time and can be viewed from a single booking grid so everybody knows what's going on at any given time.</p>
+        <br>
+        <input class="btn" type="submit" value=" READ MORE ABOUT BOOKING" />
+  </div>
+  <div>
+    <img src="https://desktime.com/static/web/features/booking-feature.png" alt="">
+</div>
+</div>
+
+<div id="screen">
+        
+    <div>
+        <img src="https://desktime.com/static/web/features/screenshots.png" alt="">
+    </div>
+    <div class="two">
+        <h1>Auto screenshots</h1>
+    
+
+        <p>Activate the screenshots feature for a more detailed view of your team’s efficiency and for monitoring remote employees. Every 5, 10, 15 or 30 minutes DeskTime will take a screenshot (regular or blurred) of what everyone is working on and automatically highlight shots that have caught unproductive activities.</p>
+        <br>
+        <input class="btn" type="submit" value="MORE ABOUT SCREENSHOTS" />
+  </div>
+  
+</div>
+
+<div id="ott">
+        
+    
+    <div class="two">
+        <h1>Offline time tracking</h1>
+        <p>Collect accurate data about the time spent away from the work computer. Specify the reasons for absence and put them down as productive, unproductive, or neutral. That way, you'll have a more precise overview of your team's workload, time management, and productivity.</p>
+        <br>
+        <input class="btn" type="submit" value="MORE ABOUT OFFLINE TIME TRACKING " />
+  </div>
+  <div>
+    <img width="50%" src="https://desktime.com/static/web/features/offline-time.png" alt="">
+</div>
+</div>
+<div id="blue">
+    <h1>Be 100% in control when managing your projects</h1>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign up Page</title>
+  <style>
+       header{
+        position: fixed;
+        background-color:  white;
+        width: 100%;
+        margin-bottom: 20px;
+       
+           }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        margin: 0;
+        padding: 0;
+        width: 100px;
+      }
+      header {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        height: 100px;
+        border-top: 4px solid green;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      #nav-text > a,
+      button {
+        margin: 10px;
+        font-style: normal;
+        text-decoration: none;
+        color: rgb(73, 82, 88);
+        font-size: 20px;
+      }
+      .btn1 {
+        padding: 5px 10px;
+      }
+      .btn2 {
+        padding: 5px 10px;
+        background-color: rgb(78, 168, 25);
+        border: none;
+      }
+      .btn1 > a {
+        text-decoration: none;
+        color: rgb(73, 82, 88);
+        font-size: 12px;
+      }
+      .btn2 > a {
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+      }
+      #nav-text > a:hover {
+        text-decoration: underline green;
+      }
+      main{
+        padding-top: 200px;
+      }
+      #signup{
+        /* border: 1px solid red; */
+        display: grid;
+        margin: auto;
+        justify-content: center;
+        width: 30%;
+        padding:30px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        color: rgb(73, 82, 88);
+       padding-right: 10px;
+       
+      }
+      input{
+        padding: 10px;
+        padding-right: 180px;
+      }
+      #su{
+        background-color: rgb(78,168,25);
+        text-align: center;
+        padding-left: 180px;
+        border: none;
+      }
+
+
+      #table{
+  display: flex;
+  font-size:larger ;
+  justify-content: space-evenly;
+}
+#table>div>h3,a{
+  text-decoration:none;
+  color: rgb(73, 82, 88);
+}
+#table>div{
+  padding-top: 40px;
+}
+#lbottom{
+  display: flex;
+  height: auto;
+  background-color: rgb(235,236,236);
+}
+#lbottom>div{
+ 
+  width: 50%;
+ 
+  height: auto;
+
+} 
+#lbottom>#first{ 
+  text-align: center; 
+ 
+  margin: auto;
+ }
+ #lbottom>#first>#images>img{ 
+  width: 40px; 
+ margin: 20px;
+ }
+
+ #lbottom>.second{
+  
+  margin: auto;
+  
+  text-align: center;
+ 
+ }
+ .second>.input1{
+  font-size: larger;
+  padding: 8px;
+  border: 0.5px solid red;
+ }
+ .second>.input2{
+  font-size: medium;
+  color: white;
+  background-color: green;
+  padding: 8px;
+  border: 0.5px solid black;
+ }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div>
+        <a href="./index.html"><img src="C:\Users\BIIT\OneDrive\Desktop\wasteful-distribution-8476\day-3\Untitled design.jpg" /></a>
+      </div>
+      <div id="nav-text">
+        <a href="./Demo.html">Demo</a>
+        <a href="./Features.html">Features</a>
+        <a href="">Pricing</a>
+        <a href="">About us</a><a href="">FAQ</a>
+        <a href="">Blog</a>
+        <button class="btn1"><a href="./login.html">LOGIN</a></button>
+        <button class="btn2"><a href="./Signup.html">SIGN UP</a></button>
+
+        <select>
+          <option value="">English</option>
+          <option value="">Hindi</option>
+          <option value="">French</option>
+        </select>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="nav">
+      <a href="./login.html">Login</a>
+      <a href="./Signup.html">Signin</a>
+    </div>
+    <div id="signup">
+      <h1>Log in to DeskTime</h1>
+      <br>
+      <br>
+      <form>
+        <label for="">Name</label>
+        <br>
+        <input type="text" id="name" placeholder="Enter your name">
+        <br>
+        <br>
+        <label for="">Email</label>
+        <br>
+        <input type="email" id="email" placeholder="Enter your email">
+        <br>
+        <br>
+        <label for="">Password</label>
+        <br>
+        <input type="password"  id="password" placeholder="Enter your password">
+        <br>
+        <br>
+        <input type="submit" value="Submit" id="su"/>
+        <br>
+        <br>
+        <p>Try free for 14 days. No credit card required.
+
+          By signing up, you agree to our <u>terms</u> and <u>privacy policy.</u></p>
+
+          <br>
+          <p>Are you already registered? <u><a href="login.html"><h3>Log in here!</h3></u></p>
+      </form>
+    </div>
+  </main>
+
+  <div id="social">
+    <a class="social-icon facebook" href="https://desktime.com/auth/login/facebook"></a>
+    <img src="https://desktime.com/auth/login/facebook" alt="">
+  </div>
+  <div id="table">
+
+    <div class="div-one">
+      <h3><a href="">Company</a></h3>
+  <a href="">Home</a><br>
+  <a href="">Terms</a><br>
+  <a href="">Privacy</a><br>
+  <a href="">Cookies</a><br>
+  <a href="">Affiliate terms</a><br>
+  <a href="">Download app</a><br>
+  <a href="">Pricing</a><br>
+  <a href="">Affiliate</a><br>
+  <a href="">Press</a><br>
+  <a href="">DeskTime in your language</a><br>
+    </div>
+    <div class="div-two">
+      <h3><a href="">Learn more</a></h3><br>
+  <a href="">All resource</a><br>
+  <a href="">Employee monitoring guide</a><br>
+  <a href="">Online employee time clock</a><br>
+  <a href="">DeskTime for business</a><br>
+  <a href="">DeskTime for freelancers</a><br>
+  <a href=""> FAQ</a><br>
+  <a href="">Casen studies</a><br>
+  <a href="">Webinars</a><br>
+  <a href="">Blog</a><br>
+  <a href=""></a><br>
+    </div>
+      
+    <div class="div-three">
+      <h3><a href="">Integrations</a></h3><br>
+      <a href="">All integrations</a><br>
+      <a href="">Trello</a><br>
+      <a href="">Basecamp</a><br>
+      <a href="">Jira</a><br>
+      <a href="">Asana</a><br>
+      <a href="">Outlook</a><br>
+      <a href="">Google</a><br>
+    </div>
+  
+    <div class="four">
+      <h3><a href="">Features</a></h3><br>
+      <a href="">All features</a><br>
+      <a href="">Automatic time tracking</a><br>
+      <a href=""> URL & App Tracking</a><br>
+      <a href="">Screenshots</a><br>
+      <a href="">Project time tracking</a><br>
+      <a href=""> Shift schedule</a><br>
+      <a href=""> Offiline time tracking</a><br>
+      <a href=""> Absebse</a><br>
+      <a href="">Mobile app</a><br>
+      <a href="">Features request</a><br>
+    </div>
+  
+    <div class="five">
+      <h3><a href="">Help centre</a></h3><br>
+      <a href="">Contact</a><br>
+      <a href="">Schedule</a><br>
+      <a href="">Send us an e-mail</a><br>
+      <a href="">Request in-person training</a><br>
+      <a href="">Open chat</a><br>
+      <a href=""><h3>Phone support</h3></a><br>
+      <a href="">+1(315)6365354</a><br>
+      <a href="">MON-FRI 9:00-22:00</a><br>
+    </div>
+  </div>
+  
+  <div id="lbottom">
+    <div id="first">
+      <div>
+        <img  src="Untitled design.jpg" alt="">
+      </div>
+      <div id="images">
+        <img  src="https://eep.io/images/yzco4xsimv0y/5daYAeMRSgIUUiSquGwsgI/1904e3f818575ec9625fa15dab193243/icon-facebook.svg?w=320&fm=webp&q=80" alt="">
+          <img src="https://eep.io/images/yzco4xsimv0y/3VjJhbqftKuok6gqYuUQKy/328d56c5d13ad50b9679b11e716bb218/icon-twitter.svg?w=320&fm=webp&q=80" alt="">
+          <img src="https://eep.io/images/yzco4xsimv0y/RlNw7Xkw8uKYAUoYU4aQw/ff3eada8736da9e63fbd9f929c6a677c/icon-instagram.svg?w=320&fm=webp&q=80" alt="">
+          <img src="https://eep.io/images/yzco4xsimv0y/n5saFR4miW4U4ygUIQo0A/8f9c60cb133b80fda2fe9bdb825b4a5f/icon-linkedin.svg?w=320&fm=webp&q=80" alt="">
+          <img src="https://eep.io/images/yzco4xsimv0y/2z1ra9BrgQewIqMQckMasg/58e3e8ec04acd60f0642f89dfbd71218/icon-youtube.svg?w=320&fm=webp&q=80" alt="">
+          <img src="https://eep.io/images/yzco4xsimv0y/7nawBEArBKpxRukK66OZtN/af9879112b20982e13748d47b24c8681/pinterest-logo.svg?w=320&fm=webp&q=80" alt="">
+  
+      </div>
+    </div>
+    <div class="second">
+    
+      <img src="https://eep.io/images/yzco4xsimv0y/1u3hha7FE0Q402e2qsMu6a/5e403548149c1618b64034284f692ff1/icon-ios.svg?w=320&fm=webp&q=80" alt="">
+     <img src="https://eep.io/images/yzco4xsimv0y/64EpnI4RsQI66c2y2O60G2/4c34d7bc4dd7a4362c7e19a06c109e21/icon-android.svg?w=320&fm=webp&q=80" alt="">
+     <br>
+   
+    <p>Subscribe to our newsletter</p>
+    <input type="text" value="Type in your email" class="input1">
+    <input type="submit" value="SUBSCRIBE" bg="green" class="input2">
+    </div>
+  </div>
+</body>
+<script>
+     let acc = document.querySelector("form");
+     acc.addEventListener("submit",function(event){
+      event.preventDefault();
+     let mat =JSON.parse(localStorage.getItem("account-data"))||[];
+    let obj={
+      name:acc.name.value,
+      email:acc.email.value,
+      password:acc.password.value,
+
+    }
+    mat.push(obj)
+    console.log(mat)
+    if(obj.name=="" && obj.email=="" && obj.password==""){
+      alert("Please fill the form ")
+    }else{
+      alert("Sign up Successfully")
+      localStorage.setItem("account-data",JSON.stringify(mat))
+    }
+    // localStorage.setItem("account-data",JSON.stringify(mat))
+  })
+</script>
+
+</html>

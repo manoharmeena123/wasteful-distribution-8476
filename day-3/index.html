@@ -31,6 +31,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        /* padding-top: 10px; */
       }
 
       #nav-text > a,
@@ -189,8 +190,6 @@
         justify-content: center;
         margin: auto;
         height: 200px;
-      
-      
         font-size: larger;
       }
       #centre>#div-bottom>div>a{
@@ -423,22 +422,29 @@
   padding: 8px;
   border: 0.5px solid black;
  }
+ #footer{
+  background-color: rgb(214,216,217);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+ }
     </style>
   </head>
   <body>
     <header>
       <nav>
         <div>
-          <img src="Untitled design.jpg" />
+         <a href="./index.html"><img src="C:\Users\BIIT\OneDrive\Desktop\wasteful-distribution-8476\day-3\Untitled design.jpg" /></a>
         </div>
         <div id="nav-text">
-          <a href="">Demo</a>
-          <a href="">Features</a>
+          <a href="./Demo.html">Demo</a>
+          <a href="./Features.html">Features</a>
           <a href="">Pricing</a>
           <a href="">About us</a><a href="">FAQ</a>
           <a href="">Blog</a>
-          <button class="btn1"><a href="">LOGIN</a></button>
-          <button class="btn2"><a href="">SIGN UP</a></button>
+          <button class="btn1"><a href="./login.html">LOGIN</a></button>
+          <button class="btn2"><a href="./Signup.html">SIGN UP</a></button>
 
           <select>
             <option value="">English</option>
@@ -471,15 +477,7 @@
           </p>
         </div>
         <div id="two">
-          <iframe
-            width="554"
-            height="312"
-            src="https://www.youtube.com/embed/sgmDvqlSMF4?list=TLGGEClHjokj1vQwODExMjAyMg"
-            title="DeskTime: Time and Employee Management Software"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <iframe width="554" height="312" src="https://www.youtube.com/embed/sgmDvqlSMF4?list=TLGGEClHjokj1vQxMDExMjAyMg" title="DeskTime: Time and Employee Management Software" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
       <div id="blank">
@@ -833,7 +831,7 @@
   <h1>Want to get the most out of your time?
     Try DeskTime for free!</h1>
     <br>
-    <input type="text" value="Your work mail" placeholder="email">
+    <input type="search" placeholder="Your work mail" placeholder="email">
     <input type="submit" value="START FREE TRIAL" class="btn-green">
     <br>
     <br>
@@ -845,7 +843,7 @@
 
   <div class="div-one">
     <h3><a href="">Company</a></h3>
-<a href="">Home</a><br>
+<a href="./index.html">Home</a><br>
 <a href="">Terms</a><br>
 <a href="">Privacy</a><br>
 <a href="">Cookies</a><br>
@@ -930,9 +928,15 @@
    <br>
  
   <p>Subscribe to our newsletter</p>
-  <input type="text" value="Type in your email" class="input1">
+  <input type="search" placeholder="Type in your email" class="input1">
   <input type="submit" value="SUBSCRIBE" bg="green" class="input2">
   </div>
+</div>
+<div id="footer">
+  <p>© 2011 - 2022 DeskTime</p>
+  <p><a href="https://draugiemgroup.com/">
+  DRAUGIEM GROUP
+  </a></p>
 </div>
   </body>
 </html>

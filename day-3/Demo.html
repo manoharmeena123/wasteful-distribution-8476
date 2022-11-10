@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        margin: 0;
+        padding: 0;
+        width: 100px;
+      }
+      header {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        height: 100px;
+        border-top: 4px solid green;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      #nav-text > a,
+      button {
+        margin: 10px;
+        font-style: normal;
+        text-decoration: none;
+        color: rgb(73, 82, 88);
+        font-size: 20px;
+      }
+      .btn1 {
+        padding: 5px 10px;
+      }
+      .btn2 {
+        padding: 5px 10px;
+        background-color: rgb(78, 168, 25);
+        border: none;
+      }
+      .btn1 > a {
+        text-decoration: none;
+        color: rgb(73, 82, 88);
+        font-size: 12px;
+      }
+      .btn2 > a {
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+      }
+      #nav-text > a:hover {
+        text-decoration: underline green;
+        color: green;
+      }
+
+      #maindiv {
+        display: flex;
+        justify-content: space-around;
+       
+        padding-top: 120px;
+        height: auto;
+        background: url("https://desktime.com/static/web/_common/intro-background.png")
+          no-repeat bottom;
+      }
+      #maindiv > #one {
+        width: 50%;
+        text-align: center;
+        align-items: center;
+        padding: 60px 60px;
+        gap: 40px;
+        font-size: 20px;
+      }
+      #maindiv > #two {
+        width: 50%;
+        padding: 60px 60px;
+      }
+      #one > input {
+        font-size: 20px;
+        padding: 10px;
+      }
+      #one > .btn {
+        background-color: rgb(78, 168, 25);
+        color: white;
+        border: none;
+      }
+      #maindiv > #two > img {
+        width: 80%;
+      }
+      #box{
+        display: flex;
+        margin: auto;
+       
+        justify-content: center;
+        margin-top: 30px;
+        height: auto;
+        width: 80%;
+    padding-bottom: 60px;
+    
+    
+      }
+      #box>div{
+        
+        text-align: center;
+        text-align: center;
+      }
+      #box>div>input{
+        padding: 8px;
+        text-align: center;
+      }
+      #box>div>img{
+        width: 20%;
+      }
+
+     
+      #team{
+        width: 100%;
+        padding: 50px;
+        height: auto;
+        display: flex;
+        
+        margin: auto;
+        justify-content: space-evenly;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+       
+
+      }
+      #team>div{
+        width: 50%;
+       
+        padding: 20px;
+      }
+      #team>div>iframe{
+        padding-top: 20px;
+        height:100%;
+      }
+
+     .one > input {
+        font-size: 15px;
+        padding: 15px;
+      }
+      .one> .btn {
+        background-color: rgb(78, 168, 25);
+        color: white;
+        border: none;
+        text-align: center;
+      }
+      #employee{
+        width: 100%;
+        padding: 50px;
+        height: auto;
+        display: flex;
+        
+        margin: auto;
+        justify-content: space-evenly;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+       
+
+      }
+      #employee>div{
+        width: 50%;
+       
+        padding: 20px;
+      }
+      #employee>div>iframe{
+        padding-top: 20px;
+        height:100%;
+      }
+
+     .two > input {
+        font-size: 15px;
+        padding: 15px;
+      }
+      .two> .btn {
+        background-color: rgb(78, 168, 25);
+        color: white;
+        border: none;
+        text-align: center;
+      }
+      #freelancher{
+        width: 100%;
+        padding: 50px;
+        height: auto;
+        display: flex;
+        
+        margin: auto;
+        justify-content: space-evenly;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+      }
+      #freelancher>div{
+        width: 50%;
+       
+        padding: 20px;
+      }
+      #small-box{
+        width: 100%;
+        height: 200px;
+        background-color: rgb(49,58,65);
+        display: flex;
+        margin: auto;
+        justify-content: space-evenly;
+        align-items: center
+      }
+      #laptop{
+        width: 100%;
+        padding: 50px;
+        height: auto;
+        display: flex;
+        
+        margin: auto;
+        justify-content: space-evenly;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+      }
+      #laptop>div{
+        width: 50%;
+       
+        padding: 20px;
+      }
+      #laptop>div>img{
+        width: 80%;
+      }
+
+      #container{
+      height: auto;
+      background-color: rgb(245,245,246);
+      padding-bottom: 100px;
+      border-bottom:rgb(245,245,246) ;
+     }
+      #container>#cp{
+        height:auto;
+        text-align: center;
+        padding: 100px 300px;
+        font-size: larger;
+      }
+      #container>#slide{
+       
+        height: 80%;
+       
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: auto;
+        background-color: rgb(245,245,246);
+       
+      }
+      #slide>div>img{
+        border-radius: 8ch;
+      }
+      #slide>div{
+      padding:50px;
+      width: 20%;
+       font-size: large;
+       background-color: rgb(245,245,246);
+       height: 420px;
+       /* height: auto; */
+       box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+      }
+      
+   
+
+    #main1>.child1{
+      height: 100px;
+      font-size: large;
+      width: 60%;
+      padding: 30px 120px;
+    
+      margin: auto;
+      text-align: center;
+    }
+    
+#main-child{
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  
+  padding-bottom: 60px;
+  border-bottom:2px solid rgb(192, 171, 212);
+
+
+}
+  #main-child>div{ 
+   /* width: 30%;  */
+   padding-top: 30px;
+  /* row-gap: 20px; */
+ } 
+ #main-child>div>img{ 
+   width: 80%; 
+ 
+} 
+.btn{
+  padding: 10px;
+
+}
+
+#green{
+  height: auto;
+  background-color: rgb(78,168,25);
+  text-align: center;
+  padding: 100px 120px;
+  color: white;
+  font-size: larger;
+
+}
+#green>.btn-green{
+  background-color: rgb(78,168,25);
+  color: white;
+  border: 1px solid white;
+}
+#green>input{
+  font-size: medium;
+  color: rgb(73, 82, 88);
+  padding: 8px;
+  
+ 
+
+}
+#table{
+  display: flex;
+  font-size:larger ;
+  justify-content: space-evenly;
+}
+#table>div>h3,a{
+  text-decoration:none;
+  color: rgb(73, 82, 88);
+}
+#table>div{
+  padding-top: 40px;
+}
+#lbottom{
+  display: flex;
+  height: auto;
+  background-color: rgb(235,236,236);
+}
+#lbottom>div{
+ 
+  width: 50%;
+ 
+  height: auto;
+
+} 
+#lbottom>#first{ 
+  text-align: center; 
+ 
+  margin: auto;
+ }
+ #lbottom>#first>#images>img{ 
+  width: 40px; 
+ margin: 20px;
+ }
+
+ #lbottom>.second{
+  
+  margin: auto;
+  
+  text-align: center;
+ 
+ }
+ .second>.input1{
+  font-size: larger;
+  padding: 8px;
+  border: 0.5px solid red;
+ }
+ .second>.input2{
+  font-size: medium;
+  color: white;
+  background-color: green;
+  padding: 8px;
+  border: 0.5px solid black;
+ }
+ #footer{
+  background-color: rgb(214,216,217);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+ }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a href="./index.html"
+            ><img
+              src="C:\Users\BIIT\OneDrive\Desktop\wasteful-distribution-8476\day-3\Untitled design.jpg"
+          /></a>
+        </div>
+        <div id="nav-text">
+          <a href="./Demo.html">Demo</a>
+          <a href="./Features.html">Features</a>
+          <a href="">Pricing</a>
+          <a href="">About us</a><a href="">FAQ</a>
+          <a href="">Blog</a>
+          <button class="btn1"><a href="./login.html">LOGIN</a></button>
+          <button class="btn2"><a href="./Signup.html">SIGN UP</a></button>
+
+          <select>
+            <option value="">English</option>
+            <option value="">Hindi</option>
+            <option value="">French</option>
+          </select>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div id="maindiv">
+        <div id="one">
+          <h1>Get a super quick in-depth demo of DeskTime</h1>
+          <br />
+          <p>
+            What’s the best way to find out if DeskTime works for you? Try it
+            yourself! We’ll give you a personalized 1:1 DeskTime demo and answer
+            any questions you might have.
+          </p>
+          <br />
+          <input class="btn" type="submit" value="BOOK A DEMO" />
+          <input type="button" value="START A FREE TRIAL" placeholder="START FREE TRIAL" />
+        </div>
+        <div id="two">
+          <img
+            src="https://desktime.com/static/web/demo/demo-of-desktime.png"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div id="box">
+        <div>
+          <img src="https://desktime.com/static/web/demo/magnify.svg" />
+          <br>
+          <h2>Demo account</h2>
+          <br>
+          <p>
+            Learn how DeskTime tracks time, explore the dashboard and try all
+            the available features in this self-guided DeskTime demo.
+          </p>
+          <br>
+          <input type="button" value="EXPLORE" />
+          <br>
+        </div>
+        <div>
+          <img src="https://desktime.com/static/web/demo/chat.svg" /><br>
+          <h2>Live demo</h2><br>
+          <p>
+            Sign up for a 1:1 demo call with our product expert, take a
+            personalized tour and get answers to any questions you might have.
+          </p><br>
+          <input type="button" value="BOOK A DEMO" /><br>
+        </div>
+        <div>
+          <img src="https://desktime.com/static/web/demo/webinar.svg" /><br>
+          <h2>Webinars</h2><br>
+          <p>
+            Watch on-demand webinars and tutorials to make sure you get the most
+            out of all the features DeskTime has to offer.
+          </p><br>
+          <input type="button" value="WATCH NOW" /><br>
+        </div>
+        <div>
+          <img src="https://desktime.com/static/web/demo/form.svg" /><br>
+          <h2>Sign Up</h2><br>
+          <p>
+            Find out what time tracking means, add team members, and test the
+            project feature for effective workflow management.
+          </p><br>
+          <input type="button" value="START A FREE TRIAL" /><br>
+        </div>
+      </div>
+   
+      <div id="team">
+        <div class="one">
+            <h1>DeskTime for Teams</h1>
+            <br>
+            <p>Watch this tutorial to learn how to keep track of your employees' work with the Admin features of DeskTime, find out how to add team members, manage work schedules, create reports, and more.</p>
+            <br>
+            <p>With DeskTime you can plan and create shifts, manage absences and use the Project tracking feature to see who is working on what and for how long.</p>
+            <br>
+               <ul>
+                    <li>Keep track of processes and goals.</li>
+                     <li>Set Automatic time & project tracking.</li>
+                      <li>Grasp shift and absence scheduling.</li>
+                </ul>
+            <br>
+            <input class="btn" type="submit" value="START FREE TRIAL" />
+          <input type="button" value="BOOK A DEMO"  />
+        </div>
+        <div>
+            <iframe width="554" height="302" src="https://www.youtube.com/embed/uFl2-NstWtc" title="DeskTime for Teams" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div id="employee">
+        <div>
+            <iframe width="554" height="304" src="https://www.youtube.com/embed/dXNTGAttl6Y" title="DeskTime for Employees" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="two">
+            <h1>DeskTime for Employees</h1>
+            <br>
+            <p>If you're working in a company that tracks your work hours with DeskTime, this video guide is for you.</p>
+            <br>
+            <p>Learn what DeskTime’s time tracking app is, how to navigate it, use its features, such as Projects, Work Schedules, Absence calendar, Reports, and more.</p>
+            <br>
+               <ul>
+                    <li>Identify your computer usage habits.</li>
+                     <li>Improve upon work plan & execution.</li>
+                      <li>See what's causing constraints in your day.</li>
+                </ul>
+            <br>
+            <input class="btn" type="submit" value="START FREE TRIAL" />
+          <input type="button" value="BOOK A DEMO"  />
+        </div>
+        
+      </div>
+
+      
+      <div id="freelancher">
+        <div class="one">
+            <h1>DeskTime for Freelancers</h1>
+            <br>
+            <p>This guide explores the main features of DeskTime for freelancers and shows how to manage projects, create reports, and change the settings specific to you.</p>
+            <br>
+            <p>Using DeskTime is a great way to never again get underpaid for the time invested in your clients' projects.</p>
+            <br>
+               <ul>
+                    <li>Track time spent on specific projects.</li>
+                     <li>Use the Cost calculation feature.</li>
+                      <li>Boost productivity to raise your income.</li>
+                </ul>
+            <br>
+            <input class="btn" type="submit" value="START FREE TRIAL" />
+          <input type="button" value="BOOK A DEMO"  />
+        </div>
+        <div>
+            <iframe width="554" height="304" src="https://www.youtube.com/embed/pl3kbM9mC08" title="DeskTime for Freelancers" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      
+      <div id="small-box">
+        <div>
+            <img src="https://desktime.com/static/web/_common/ratings/capterra-white-logo.svg" alt="">
+        <h4>4.5 out of 5 stars from 320 reviews</h4>
+        <img src="https://inshur.com/wp-content/uploads/2020/11/Untitled-design-19.png" alt="">
+        </div>
+        <div>
+            <img src="https://desktime.com/static/web/_common/ratings/g2-crowd-white-logo.svg" alt="">
+            <h4>4.5 out of 5 stars from 146 reviews</h4>
+            <img src="https://inshur.com/wp-content/uploads/2020/11/Untitled-design-19.png" alt="">
+        </div>
+        <div>
+            <img src="https://desktime.com/static/web/_common/ratings/software-advice-white-logo.svg" alt="">
+            <h4>4.5 out of 5 stars from 320 reviews</h4>
+            <img src="https://inshur.com/wp-content/uploads/2020/11/Untitled-design-19.png" alt="">
+        </div>
+        
+      </div>
+
+      <div id="laptop">
+        
+            <div>
+                <img src="https://desktime.com/static/web/demo/notebook.png" alt="">
+            </div>
+            <div class="two">
+                <h1>Not convinced yet?
+                    Check out our self-guided demo</h1>
+                <br>
+
+                <p>If you want the full scope of what you’re getting once you sign up, visit our demo account. You can try out all the features DeskTime has to offer.</p>
+                <br>
+                <input class="btn" type="submit" value="DEMO ACCOUNT" />
+          </div>
+      </div>
+    </main>
+    <div id="container">
+        <div id="cp">
+          <h1>More than 18 000 companies worldwide trust DeskTime with their business</h1>
+        </div>
+        <div id="slide">
+        <div>
+          
+            <img src="https://desktime.com/static/web/testimonial-images/syed-mazhar-ahmed.jpg" alt="">
+         <h3 inline="block">SYED-MAZHAR-AHMED</h3>
+         <span class="dt-typography-subtitle-regular text-gray-900">CTO</span>
+         <br>
+        
+         <span class="dt-typography-subtitle-regular text-gray-900 font-weight-bolder">Oceanize Inc</span>
+         <br>
+         <br>
+         <h>DeskTime is an awesome tool to not only monitor team's performance but also it helps to boost it. Our company productivity increased by 25% after using DeskTime. It's a must for small to corporate companies.</h3>
+         
+        </div>
+        <div>
+          
+          <img src="https://desktime.com/static/web/testimonial-images/thompson-law.png" alt="">
+       <h3 inline="block">JACK Thompson</h3>
+       <span class="dt-typography-subtitle-regular text-gray-900">CEO</span>
+       <br>
+      
+       <span class="dt-typography-subtitle-regular text-gray-900 font-weight-bolder">Thompson Low</span>
+       <br>
+       <br>
+  
+       <h>DeskTime has helped us see where our staff can more efficiently tend to our personal injury cases and the injured clients who need us. Whether working from home or at the office, it has improved overall productivity, efficiency, and most importantly has shown our diligence to be there for our personal injury clients in Dallas-Fort Worth and beyond when it matters most.</h>
+      </div>
+  
+      <div>
+          
+        <img src="https://desktime.com/static/web/testimonial-images/cate.jpg" alt="">
+     <h3 inline="block">Customer Relations Manager</h3>
+     <span class="dt-typography-subtitle-regular text-gray-900">ConnexCS</span>
+     <br>
+     <br>
+     <h>DeskTime has helped us see where our staff can more efficiently tend to our personal injury cases and the injured clients who need us. Whether working from home or at the office, it has improved overall productivity, efficiency, and most importantly has shown our diligence to be there for our personal injury clients in Dallas-Fort Worth and beyond when it matters most.</h>
+    </div>
+            </div>
+       
+      </div>
+     
+     
+      
+      <div id="main1">
+        <div class="child1">
+          <h1>A single time tracking app for desktops and mobile phones</h1>
+          <p>Whether in the office or on the go – use DeskTime to keep track of your and your team's time.</p>
+        </div>
+      <div id ="main-child">
+        <div>
+          <img src="https://desktime.com/static/web/new-homepage/desktop/desktop.webp" alt="">
+          <h2>DeskTime for desktops</h2>
+         <ul>Requires download and installation</ul>
+         <ul>
+          <li>Fully automated time tracker</li>
+          <li>App, URL & Document title tracking</li>
+          <li>Project and task tracking</li>
+          <li>Screenshots</li>
+          <li>Idle and Private time</li>
+         </ul>
+         <input type="submit" value="LEARN MORE" class="btn">
+        </div>
+        <div>
+          <img src="https://desktime.com/static/web/new-homepage/mobile/mobile.webp" alt="">
+          <h2>DeskTime for mobile phones</h2>
+          <ul>Requires download and installation</ul>
+          <ul>
+            <li>Manual time tracker</li>
+            <li>Workday overview</li>
+            <li>Project and task tracking</li>
+          </ul>
+          <input type="submit" value="LEARN MORE" class="btn">
+        </div>
+        <div>
+          <img src="https://desktime.com/static/web/new-homepage/webtimer/webtimer.webp" alt="">
+           <h2>Manual time tracking</h2>
+           <p>Supported on all popular browsers</p>
+           <ul>No software installation necessary</ul>
+           <ul>
+            <li>Manual time tracker</li>
+           <li>Workday overview</li>
+           <li>Project and task tracking</li>
+           </ul>
+           
+           <input type="submit" value="LEARN MORE" class="btn">
+           
+        </div> 
+      </div>
+        
+      </div>
+      
+      
+      <div id="green">
+        <h1>Want to get the most out of your time?
+          Try DeskTime for free!</h1>
+          <br>
+          <input type="text" value="Your work mail" placeholder="email">
+          <input type="submit" value="START FREE TRIAL" class="btn-green">
+          <br>
+          <br>
+          <p>Try free for 14 days. No credit card required.</p>
+          <br>
+          <p>By signing up, you agree to our <u>terms</u> and <u>privacy policy.</u></p>
+      </div>
+      <div id="table">
+      
+        <div class="div-one">
+          <h3><a href="">Company</a></h3>
+      <a href="">Home</a><br>
+      <a href="">Terms</a><br>
+      <a href="">Privacy</a><br>
+      <a href="">Cookies</a><br>
+      <a href="">Affiliate terms</a><br>
+      <a href="">Download app</a><br>
+      <a href="">Pricing</a><br>
+      <a href="">Affiliate</a><br>
+      <a href="">Press</a><br>
+      <a href="">DeskTime in your language</a><br>
+        </div>
+        <div class="div-two">
+          <h3><a href="">Learn more</a></h3><br>
+      <a href="">All resource</a><br>
+      <a href="">Employee monitoring guide</a><br>
+      <a href="">Online employee time clock</a><br>
+      <a href="">DeskTime for business</a><br>
+      <a href="">DeskTime for freelancers</a><br>
+      <a href=""> FAQ</a><br>
+      <a href="">Casen studies</a><br>
+      <a href="">Webinars</a><br>
+      <a href="">Blog</a><br>
+      <a href=""></a><br>
+        </div>
+          
+        <div class="div-three">
+          <h3><a href="">Integrations</a></h3><br>
+          <a href="">All integrations</a><br>
+          <a href="">Trello</a><br>
+          <a href="">Basecamp</a><br>
+          <a href="">Jira</a><br>
+          <a href="">Asana</a><br>
+          <a href="">Outlook</a><br>
+          <a href="">Google</a><br>
+        </div>
+      
+        <div class="four">
+          <h3><a href="">Features</a></h3><br>
+          <a href="">All features</a><br>
+          <a href="">Automatic time tracking</a><br>
+          <a href=""> URL & App Tracking</a><br>
+          <a href="">Screenshots</a><br>
+          <a href="">Project time tracking</a><br>
+          <a href=""> Shift schedule</a><br>
+          <a href=""> Offiline time tracking</a><br>
+          <a href=""> Absebse</a><br>
+          <a href="">Mobile app</a><br>
+          <a href="">Features request</a><br>
+        </div>
+      
+        <div class="five">
+          <h3><a href="">Help centre</a></h3><br>
+          <a href="">Contact</a><br>
+          <a href="">Schedule</a><br>
+          <a href="">Send us an e-mail</a><br>
+          <a href="">Request in-person training</a><br>
+          <a href="">Open chat</a><br>
+          <a href=""><h3>Phone support</h3></a><br>
+          <a href="">+1(315)6365354</a><br>
+          <a href="">MON-FRI 9:00-22:00</a><br>
+        </div>
+      </div>
+      
+      <div id="lbottom">
+        <div id="first">
+          <div>
+            <img  src="Untitled design.jpg" alt="">
+          </div>
+          <div id="images">
+            <img  src="https://eep.io/images/yzco4xsimv0y/5daYAeMRSgIUUiSquGwsgI/1904e3f818575ec9625fa15dab193243/icon-facebook.svg?w=320&fm=webp&q=80" alt="">
+              <img src="https://eep.io/images/yzco4xsimv0y/3VjJhbqftKuok6gqYuUQKy/328d56c5d13ad50b9679b11e716bb218/icon-twitter.svg?w=320&fm=webp&q=80" alt="">
+              <img src="https://eep.io/images/yzco4xsimv0y/RlNw7Xkw8uKYAUoYU4aQw/ff3eada8736da9e63fbd9f929c6a677c/icon-instagram.svg?w=320&fm=webp&q=80" alt="">
+              <img src="https://eep.io/images/yzco4xsimv0y/n5saFR4miW4U4ygUIQo0A/8f9c60cb133b80fda2fe9bdb825b4a5f/icon-linkedin.svg?w=320&fm=webp&q=80" alt="">
+              <img src="https://eep.io/images/yzco4xsimv0y/2z1ra9BrgQewIqMQckMasg/58e3e8ec04acd60f0642f89dfbd71218/icon-youtube.svg?w=320&fm=webp&q=80" alt="">
+              <img src="https://eep.io/images/yzco4xsimv0y/7nawBEArBKpxRukK66OZtN/af9879112b20982e13748d47b24c8681/pinterest-logo.svg?w=320&fm=webp&q=80" alt="">
+      
+          </div>
+        </div>
+        <div class="second">
+        
+          <img src="https://eep.io/images/yzco4xsimv0y/1u3hha7FE0Q402e2qsMu6a/5e403548149c1618b64034284f692ff1/icon-ios.svg?w=320&fm=webp&q=80" alt="">
+         <img src="https://eep.io/images/yzco4xsimv0y/64EpnI4RsQI66c2y2O60G2/4c34d7bc4dd7a4362c7e19a06c109e21/icon-android.svg?w=320&fm=webp&q=80" alt="">
+         <br>
+       
+        <p>Subscribe to our newsletter</p>
+        <input type="text" value="Type in your email" class="input1">
+        <input type="submit" value="SUBSCRIBE" bg="green" class="input2">
+        </div>
+      </div>
+      <div id="footer">
+        <p>© 2011 - 2022 DeskTime</p>
+        <p><a href="https://draugiemgroup.com/">
+        DRAUGIEM GROUP
+        </a></p>
+      </div>
+        </body>
+      </html>
+      
+  </body>
+</html>

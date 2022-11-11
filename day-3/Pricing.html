@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  header{
+        position: fixed;
+        background-color:  white;
+        width: 100%;
+        /* margin-bottom: 20px; */
+       
+           }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        margin: 0;
+        padding: 0;
+        width: 100px;
+      }
+      header {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        height: 100px;
+        border-top: 4px solid green;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* padding-top: 10px; */
+      }
+
+      #nav-text > a,
+      button {
+        margin: 10px;
+        font-style: normal;
+        text-decoration: none;
+        color: rgb(73, 82, 88);
+        font-size: 20px;
+      }
+      .btn1 {
+        padding: 5px 10px;
+      }
+      .btn2 {
+        padding: 5px 10px;
+        background-color: rgb(78, 168, 25);
+        border: none;
+      }
+      .btn1 > a {
+        text-decoration: none;
+        color: rgb(73, 82, 88);
+        font-size: 12px;
+      }
+      .btn2 > a {
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+      }
+      #nav-text > a:hover {
+        text-decoration: underline green;
+      }
+
+      main{
+        height: auto;
+        padding-top: 100px;
+      }
+      #price-btn{
+        height: 250px;
+        padding-top: 100px;
+        text-align: center;
+        background-color: rgb(245,245,246);
+      color: rgb(51,60,67);
+      font-size: larger;
+      }
+      #price-btn>input{
+        padding: 12px 12px;
+        font-size: medium;
+
+      }
+      input:hover{
+        position:absolute;
+        background-color: rgb(71,80,86);
+        color: white;
+        border: none;
+      }
+      
+      
+
+    </style>
+</head>
+<body>
+     <header>
+      <nav>
+        <div>
+         <a href="./index.html"><img src="Untitled design.jpg" /></a>
+        </div>
+        <div id="nav-text">
+          <a href="./Demo.html">Demo</a>
+          <a href="./Features.html">Features</a>
+          <a href="./Pricing.html">Pricing</a>
+          <a href="./FAQ.html">About us</a><a href="">FAQ</a>
+          <a href="">Blog</a>
+          <button class="btn1"><a href="./login.html">LOGIN</a></button>
+          <button class="btn2"><a href="./Signup.html">SIGN UP</a></button>
+
+          <select>
+            <option value="">English</option>
+            <option value="">Hindi</option>
+            <option value="">French</option>
+          </select>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <div id="price-btn">
+            <h1>Get the best price for your team</h1>
+            <br>
+            <p>The industry-leading automatic time tracking and management system.</p>
+                <p>If you'd like to get a personalised pricing quote contact us <u>here.</u></p>
+                <br>
+            <input type="submit" value="Monthly">
+            <input type="submit" value="Annual">
+        </div>
+    </main>
+</body>
+</html>

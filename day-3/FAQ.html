@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+        position: fixed;
+        background-color:  white;
+        width: 100%;
+        /* margin-bottom: 20px; */
+       
+           }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        margin: 0;
+        padding: 0;
+        width: 100px;
+      }
+      header {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        height: 100px;
+        border-top: 4px solid green;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* padding-top: 10px; */
+      }
+
+      #nav-text > a,
+      button {
+        margin: 10px;
+        font-style: normal;
+        text-decoration: none;
+        color: rgb(73, 82, 88);
+        font-size: 20px;
+      }
+      .btn1 {
+        padding: 5px 10px;
+      }
+      .btn2 {
+        padding: 5px 10px;
+        background-color: rgb(78, 168, 25);
+        border: none;
+      }
+      .btn1 > a {
+        text-decoration: none;
+        color: rgb(73, 82, 88);
+        font-size: 12px;
+      }
+      .btn2 > a {
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+      }
+      #nav-text > a:hover {
+        text-decoration: underline green;
+      }
+
+      #first{
+        margin: auto;
+        text-align: center;
+     padding-top:200px ;
+        height: 200px;
+        background-color: rgb(245,245,246);
+      color: rgb(51,60,67);
+      font-size: medium;
+      }
+
+      #first>.btn1{
+        padding: 15px 60px;
+font-size: medium;
+      }
+      #first>.btn2{
+        padding: 15px;
+        background-color: green;
+        color: white;
+        font-size: medium;
+      }
+
+
+      #contain{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(6,250px);
+        width: 70%;
+        gap: 20px;
+        margin: auto;
+        padding-top:150px ;
+        padding-bottom: 50px;
+      
+      }
+      #contain>div{
+       padding-top: 30px;
+       box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+        /* grid-template-rows: 200px; */
+        padding: 20px;
+        
+      }
+      #contain>div>.big{
+        padding: 15px 200px;
+        color: white;
+        background-color: coral;
+        border: none;
+      }
+      #green{
+  height: auto;
+  background-color: rgb(78,168,25);
+  text-align: center;
+  padding: 100px 120px;
+  color: white;
+  font-size: larger;
+
+}
+#green>.btn-green{
+  background-color: rgb(78,168,25);
+  color: white;
+  border: 1px solid white;
+}
+#green>input{
+  font-size: medium;
+  color: rgb(73, 82, 88);
+  padding: 8px;
+  
+ 
+
+}
+#table{
+  display: flex;
+  font-size:larger ;
+  justify-content: space-evenly;
+}
+#table>div>h3,a{
+  text-decoration:none;
+  color: rgb(73, 82, 88);
+}
+#table>div{
+  padding-top: 40px;
+}
+#lbottom{
+  display: flex;
+  height: auto;
+  background-color: rgb(235,236,236);
+}
+#lbottom>div{
+ 
+  width: 50%;
+ 
+  height: auto;
+
+} 
+#lbottom>#first{ 
+  text-align: center; 
+ 
+  margin: auto;
+ }
+ #lbottom>#first>#images>img{ 
+  width: 40px; 
+ margin: 20px;
+ }
+ #lbottom>#first>#one1>img{
+  background-color: gray;
+  color: gray;
+  border-radius: 50px;
+  margin-top: 5px;
+ }
+
+ #lbottom>.second{
+  
+  margin: auto;
+  
+  text-align: center;
+ 
+ }
+ .second>.input1{
+  font-size: larger;
+  padding: 8px;
+  border: 0.5px solid red;
+ }
+ .second>.input2{
+  font-size: medium;
+  color: white;
+  background-color: green;
+  padding: 8px;
+  border: 0.5px solid black;
+ }
+ #footer{
+  background-color: rgb(214,216,217);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+ }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <div>
+           <a href="./index.html"><img src="Untitled design.jpg" /></a>
+          </div>
+          <div id="nav-text">
+            <a href="./Demo.html">Demo</a>
+            <a href="./Features.html">Features</a>
+            <a href="./Pricing.html">Pricing</a>
+            <a href="./FAQ.html">About us</a><a href="">FAQ</a>
+            <a href="">Blog</a>
+            <button class="btn1"><a href="./login.html">LOGIN</a></button>
+            <button class="btn2"><a href="./Signup.html">SIGN UP</a></button>
+  
+            <select>
+              <option value="">English</option>
+              <option value="">Hindi</option>
+              <option value="">French</option>
+            </select>
+          </div>
+        </nav>
+      </header>
+
+      <div id="first">
+        <h1>Frequently Asked Questions</h1>
+        <br>
+        <p>Here you can find all the questions you need answered</p>
+        <br>
+        <input type="search" placeholder="What are you looking for ?" class="btn1">
+        <input type="button" value="search" class="btn2">
+      </div>
+
+      <div id="contain">
+        <div>
+            <h1>Getting started</h1>
+            <br>
+            <ul>
+                <li>
+                    How to set up my account (Sign up, download, launch)?</li>  <br>
+                <li>What is MyDeskTime page and what can I find there?</li>  <br>
+                <li>What systems does DeskTime support?</li>  <br>
+            </ul>
+            <input type="button" value="VIEW ALL(16)" class="big">
+            
+        </div>
+        <div>
+            <h1>General</h1>  <br>
+            <ul>
+                <li>How does the application work?</li>  <br>
+                <li>How does the Mobile app work?</li>  <br>
+                <li>
+                    What is Private Time?</li>  <br>
+            </ul>
+            <input type="button" value="VIEW ALL(16)" class="big">
+        </div>
+        <div>
+            <h1>Settings and Accounts</h1>  <br>
+            <ul>
+                <li>What are the settings that can be edited for Account, Teams and even Team members?</li> 
+                <li>
+                    How to add new categories?</li>  <br>
+                <li>
+                    How to set up IP restrictions for locations?</li>  <br>
+            </ul>
+            <input type="button" value="VIEW ALL(16)" class="big">
+        </div>
+        <div>
+            <h1>Shifts Scheduling</h1>  <br>
+            <ul>
+                <li>
+                    How to edit or delete a shift?</li><br>
+                <li>
+                    How to create a shift?</li>  <br>
+                <li>
+                    How to approve shift requests?</li>  <br>
+            </ul>
+            <input type="button" value="VIEW ALL(16)" class="big">
+        </div>
+        <div>
+            <h1>Booking</h1>  <br>
+            <ul>
+                <li>
+                    What is the Booking section?</li>  <br>
+                <li>How to set up the Booking section?</li>  <br>
+                <li>How does the Booking work with the Work Schedules and the Absence Calendar?</li>  <br>
+            </ul>
+            <input type="button" value="VIEW ALL(16)" class="big">
+        </div>
+        <div>
+            <h1>Projects</h1>  <br>
+            <ul>
+                <li>What is "Projects" section?</li>  <br>
+                <li>
+                    How to create a project?</li>  <br>
+                <li>
+                    How to start tracking a project?</li>  <br>
+            </ul>
+            <input type="button" value="VIEW ALL(16)" class="big">
+        </div>
+        <div>
+            <h1>Offline Times</h1>  <br>
+            <ul>
+                <li>
+                    What is offline time and how to enable/disable offline time?</li>  <br>
+                <li>How can I log offline time?</li>  <br>
+                <li>How can I approve/decline employees offline time?</li>  <br>
+            </ul>
+            <input type="button" value="VIEW ALL(16)" class="big">
+        </div>
+        <div>
+            <h1>Screenshots</h1>  <br>
+            <ul>
+                <li>
+                    How to enable screen capture?</li>  <br>
+                <li>
+                    How do auto screenshots work?</li>  <br>
+                <li>
+                    Where can I find the taken screenshots?</li>  <br>
+            </ul>
+            <input type="button" value="VIEW ALL(16)" class="big">
+        </div>
+        <div>
+            <h1>Reports</h1>  <br>
+            <ul>
+                <li>
+                    What is "Reports" section?</li>  <br>
+                <li>
+                    How to set up email reports?</li>  <br>
+               
+            </ul>
+            <input type="button" value="VIEW ALL(16)" class="big">
+        </div>
+        <div>
+            <h1>
+                How to set up email reports?</h1>  <br>
+            <ul>
+                <li>
+                    How to generate an export?</li>  <br>
+                <li>
+                    What data does each export type show?</li>  <br>
+                <li>
+                    Who can create exports?</li>  <br>
+            </ul>
+            <input type="button" value="VIEW ALL(16)" class="big">
+        </div>
+        <div>
+            <h1>Integrations</h1>  <br>
+            <ul>
+                <li>What can I do with integrations?</li>  <br>
+                <li>
+                    How to integrate your Project Management apps?</li>  <br>
+                <li>How do Calendar integrations work?</li>  <br>
+            </ul>
+            <input type="button" value="VIEW ALL(16)" class="big">
+        </div>
+        <div>
+            <h1>Billing</h1>  <br>
+            <ul>
+                <li>
+                    How can I subscribe?</li>  <br>
+                <li>How much does DeskTime cost?</li>  <br>
+                <li>What is the per-user pricing policy?</li>  <br>
+            </ul>
+            <input type="button" value="VIEW ALL(16)" class="big">
+        </div>
+      </div>
+        
+
+      <div id="green">
+        <h1>Want to get the most out of your time?
+          Try DeskTime for free!</h1>
+          <br>
+          <input type="search" placeholder="Your work mail" placeholder="email">
+          <input type="submit" value="START FREE TRIAL" class="btn-green">
+          <br>
+          <br>
+          <p>Try free for 14 days. No credit card required.</p>
+          <br>
+          <p>By signing up, you agree to our <u>terms</u> and <u>privacy policy.</u></p>
+      </div>
+      <div id="table">
+      
+        <div class="div-one">
+          <h3><a href="">Company</a></h3>
+      <a href="./index.html">Home</a><br>
+      <a href="">Terms</a><br>
+      <a href="">Privacy</a><br>
+      <a href="">Cookies</a><br>
+      <a href="">Affiliate terms</a><br>
+      <a href="">Download app</a><br>
+      <a href="">Pricing</a><br>
+      <a href="">Affiliate</a><br>
+      <a href="">Press</a><br>
+      <a href="">DeskTime in your language</a><br>
+        </div>
+        <div class="div-two">
+          <h3><a href="">Learn more</a></h3><br>
+      <a href="">All resource</a><br>
+      <a href="">Employee monitoring guide</a><br>
+      <a href="">Online employee time clock</a><br>
+      <a href="">DeskTime for business</a><br>
+      <a href="">DeskTime for freelancers</a><br>
+      <a href=""> FAQ</a><br>
+      <a href="">Casen studies</a><br>
+      <a href="">Webinars</a><br>
+      <a href="">Blog</a><br>
+      <a href=""></a><br>
+        </div>
+          
+        <div class="div-three">
+          <h3><a href="">Integrations</a></h3><br>
+          <a href="">All integrations</a><br>
+          <a href="">Trello</a><br>
+          <a href="">Basecamp</a><br>
+          <a href="">Jira</a><br>
+          <a href="">Asana</a><br>
+          <a href="">Outlook</a><br>
+          <a href="">Google</a><br>
+        </div>
+      
+        <div class="four">
+          <h3><a href="">Features</a></h3><br>
+          <a href="">All features</a><br>
+          <a href="">Automatic time tracking</a><br>
+          <a href=""> URL & App Tracking</a><br>
+          <a href="">Screenshots</a><br>
+          <a href="">Project time tracking</a><br>
+          <a href=""> Shift schedule</a><br>
+          <a href=""> Offiline time tracking</a><br>
+          <a href=""> Absebse</a><br>
+          <a href="">Mobile app</a><br>
+          <a href="">Features request</a><br>
+        </div>
+      
+        <div class="five">
+          <h3><a href="">Help centre</a></h3><br>
+          <a href="">Contact</a><br>
+          <a href="">Schedule</a><br>
+          <a href="">Send us an e-mail</a><br>
+          <a href="">Request in-person training</a><br>
+          <a href="">Open chat</a><br>
+          <a href=""><h3>Phone support</h3></a><br>
+          <a href="">+1(315)6365354</a><br>
+          <a href="">MON-FRI 9:00-22:00</a><br>
+        </div>
+      </div>
+      
+      <div id="lbottom">
+        <div id="first">
+          <div id="one1">
+            <img  src="Untitled design.jpg" alt="">
+          </div>
+          <div id="images">
+            <img  src="https://eep.io/images/yzco4xsimv0y/5daYAeMRSgIUUiSquGwsgI/1904e3f818575ec9625fa15dab193243/icon-facebook.svg?w=320&fm=webp&q=80" alt="">
+              <img src="https://eep.io/images/yzco4xsimv0y/3VjJhbqftKuok6gqYuUQKy/328d56c5d13ad50b9679b11e716bb218/icon-twitter.svg?w=320&fm=webp&q=80" alt="">
+              <img src="https://eep.io/images/yzco4xsimv0y/RlNw7Xkw8uKYAUoYU4aQw/ff3eada8736da9e63fbd9f929c6a677c/icon-instagram.svg?w=320&fm=webp&q=80" alt="">
+              <img src="https://eep.io/images/yzco4xsimv0y/n5saFR4miW4U4ygUIQo0A/8f9c60cb133b80fda2fe9bdb825b4a5f/icon-linkedin.svg?w=320&fm=webp&q=80" alt="">
+              <img src="https://eep.io/images/yzco4xsimv0y/2z1ra9BrgQewIqMQckMasg/58e3e8ec04acd60f0642f89dfbd71218/icon-youtube.svg?w=320&fm=webp&q=80" alt="">
+              <img src="https://eep.io/images/yzco4xsimv0y/7nawBEArBKpxRukK66OZtN/af9879112b20982e13748d47b24c8681/pinterest-logo.svg?w=320&fm=webp&q=80" alt="">
+      
+          </div>
+        </div>
+        <div class="second">
+        
+          <img src="https://eep.io/images/yzco4xsimv0y/1u3hha7FE0Q402e2qsMu6a/5e403548149c1618b64034284f692ff1/icon-ios.svg?w=320&fm=webp&q=80" alt="">
+         <img src="https://eep.io/images/yzco4xsimv0y/64EpnI4RsQI66c2y2O60G2/4c34d7bc4dd7a4362c7e19a06c109e21/icon-android.svg?w=320&fm=webp&q=80" alt="">
+         <br>
+       
+        <p>Subscribe to our newsletter</p>
+        <input type="search" placeholder="Type in your email" class="input1">
+        <input type="submit" value="SUBSCRIBE" bg="green" class="input2">
+        </div>
+      </div>
+      <div id="footer">
+        <p>© 2011 - 2022 DeskTime</p>
+        <p><a href="https://draugiemgroup.com/">
+        DRAUGIEM GROUP
+        </a></p>
+      </div>
+        </body>
+      </html>
+      
+    
+</body>
+</html>

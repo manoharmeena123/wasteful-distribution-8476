@@ -127,6 +127,12 @@
   width: 40px; 
  margin: 20px;
  }
+ #lbottom>#first>#one1>img{
+  background-color: gray;
+  color: gray;
+  border-radius: 50px;
+  margin-top: 5px;
+ }
 
  #lbottom>.second{
   
@@ -153,13 +159,14 @@
   <header>
     <nav>
       <div>
-        <a href="./index.html"><img src="C:\Users\BIIT\OneDrive\Desktop\wasteful-distribution-8476\day-3\Untitled design.jpg" /></a>
+        <a href=""><img src="Untitled design.jpg" /></a>
       </div>
       <div id="nav-text">
-        <a href="./Demo.html">Demo</a>
-        <a href="./Features.html">Features</a>
+        <a href="">Demo</a>
+        <a href="">Features</a>
         <a href="">Pricing</a>
-        <a href="">About us</a><a href="">FAQ</a>
+        <a href="">About us</a>
+        <a href="">FAQ</a>
         <a href="">Blog</a>
         <button class="btn1"><a href="./login.html">LOGIN</a></button>
         <button class="btn2"><a href="./Signup.html">SIGN UP</a></button>
@@ -173,12 +180,13 @@
     </nav>
   </header>
 <main>
-    <div class="nav">
+    <!-- <div class="nav">
         <a href="./login.html">Login</a>
         <a href="./Signup.html">Signin</a>
-      </div>
+      </div> -->
       <div id="signin">
-        <h1>Sign up for a FREE GRAB Time trial</h1>
+        
+        <h1>Log in to DeskTime</h1>
         <br>
         <p>Start tracking your productivity in less than a minute!</p>
         <br>
@@ -193,7 +201,7 @@
           <input type="password"  id="password" placeholder="Type in your password">
           <br>
           <br>
-          <input type="submit" value="Sign up" id="sn" />
+          <input type="submit" value="Sign up" id="sn"  />
           <br>
           <br>
           <p>Try free for 14 days. No credit card required. </p>
@@ -209,7 +217,7 @@
 
       <div class="div-one">
         <h3><a href="">Company</a></h3>
-    <a href="./index.html">Home</a><br>
+    <a href="./login.html">Home</a><br>
     <a href="">Terms</a><br>
     <a href="">Privacy</a><br>
     <a href="">Cookies</a><br>
@@ -274,7 +282,7 @@
     
     <div id="lbottom">
       <div id="first">
-        <div>
+        <div id="one1">
           <img  src="Untitled design.jpg" alt="">
         </div>
         <div id="images">
@@ -287,6 +295,7 @@
     
         </div>
       </div>
+     
       <div class="second">
       
         <img src="https://eep.io/images/yzco4xsimv0y/1u3hha7FE0Q402e2qsMu6a/5e403548149c1618b64034284f692ff1/icon-ios.svg?w=320&fm=webp&q=80" alt="">
@@ -304,29 +313,36 @@
    
 
      let newls = document.querySelector("form");
-     newls.addEventListener("submit" ,function(){
-
+     newls.addEventListener("submit" ,function(event){
+      event.preventDefault();
      let mail = document.querySelector("#email").value
      let pass = document.querySelector("#password").value
-       let flag=false
+       let flag=false;
      for(let i=0; i<data.length; i++){
       if(mail==data[i].email && pass==data[i].password){
         flag=true;
-        
+       
      }
-   
-     }
-     if(flag==true){
-      alert("Sign in Successfull")
+    }
      
-   
+     if(flag==true){
+      
+       alert("Sign in Successfull")
+      window.location.href="index.html";
+      // console.log(window.location.href="index.html")
+      
     }else{
       alert("Wrong Credentials")
+      window.location.href="Signup.html"
     }
    
-
+  
 
      });
+
+
+     
+     
 
 </script>
 </html>

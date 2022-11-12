@@ -84,8 +84,14 @@
       #sn{
         background-color: rgb(78,168,25);
         text-align: center;
-        padding-left: 200px;
+        padding-left: 160px;
         border: none;
+        font-size: large;
+        color: white;
+      }
+      #sn:hover{
+        background-color: darkgreen;
+        cursor: pointer;
       }
       p{
         text-align: center;
@@ -201,7 +207,7 @@
           <input type="password"  id="password" placeholder="Type in your password">
           <br>
           <br>
-          <input type="submit" value="Sign up" id="sn"  />
+          <input type="submit" value="Login" id="sn"  />
           <br>
           <br>
           <p>Try free for 14 days. No credit card required. </p>
@@ -331,7 +337,8 @@
       window.location.href="index.html";
       // console.log(window.location.href="index.html")
       
-    }else{
+    }
+    else{
       alert("Wrong Credentials")
       window.location.href="Signup.html"
     }

@@ -85,11 +85,15 @@
       #su{
         background-color: rgb(78,168,25);
         text-align: center;
-        padding-left: 180px;
+        padding-left: 160px;
         border: none;
+        font-size: large;
+        color: white;
       }
-
-
+      #su:hover{
+        background-color: darkgreen;
+        cursor: pointer;
+      }
       #table{
   display: flex;
   font-size:larger ;
@@ -208,7 +212,7 @@
         <input type="password"  id="password" placeholder="Enter your password">
         <br>
         <br>
-        <input type="submit" value="Submit" id="su"/>
+        <input type="submit" value="Sign in" id="su"/>
         <br>
         <br>
         <p>Try free for 14 days. No credit card required.
@@ -332,7 +336,7 @@
     }
     mat.push(obj)
     console.log(mat)
-    if(obj.name=="" && obj.email=="" && obj.password==""){
+    if(obj.name=="" || obj.email=="" || obj.password==""){
       alert("Please fill the form ")
     }else{
       alert("Sign up Successfully")
